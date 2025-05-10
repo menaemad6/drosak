@@ -1,0 +1,1701 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0 0;
+  padding: 0 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --c1: #4d88ff;
+  --c2: #0458ff;
+
+
+}
+
+
+.welcome {
+  background-image: url(./banner.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: relative;
+
+}
+
+.enter-page{
+  background: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  overflow: hidden;
+}
+
+
+body {
+  background-color: white;
+  scroll-behavior: smooth;
+
+}
+
+.block {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--c1);
+}
+
+.title {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--c1);
+  font-size: 33px;
+  font-weight: 800;
+}
+
+nav {
+  padding-top: 25px;
+  padding-left: 8%;
+  padding-right: 8%;
+  display: flex;
+  ;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+
+/* Navbar container */
+/* in mobile make padding top less to make it smaller r */
+.navbar {
+  overflow: hidden;
+  background-color: var(--c1);
+  font-family: Arial;
+  height: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  width: 100%;
+
+}
+
+
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding-top: 25px;
+  text-decoration: none;
+  width: 50%;
+  height: 100%;
+  transition: 0.2s;
+}
+
+.navbar a:hover {
+  background-color: var(--c2);
+}
+
+
+/*side nav */
+
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+  position: absolute;
+  /* Position them relative to the browser window */
+  left: -80px;
+  /* Position them outside of the screen */
+  margin-top: 320px;
+  transition: 0.3s;
+  /* Add transition on hover */
+  padding: 15px;
+  /* 15px padding */
+  width: 100px;
+  /* Set a specific width */
+  text-decoration: none;
+  /* Remove underline */
+  font-size: 20px;
+  /* Increase font size */
+  color: white;
+  /* White text color */
+  border-radius: 0 10px 10px 0;
+  /* Rounded corners on the top right and bottom right side */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  position: fixed;
+}
+
+
+#mySidenav a:hover {
+  left: 0;
+  /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+  top: 20px;
+  background-color: var(--c1);
+}
+
+#blog {
+  top: 80px;
+  background-color: var(--c1);
+  /* Blue */
+}
+
+#projects {
+  top: 140px;
+  background-color: var(--c1);
+  /* Red */
+}
+
+#contact {
+  top: 200px;
+  background-color: var(--c1);
+  /* Light Black */
+}
+
+.sidenav a p {
+  opacity: 0;
+}
+
+.sidenav a p:hover {
+  opacity: 1;
+}
+
+
+
+
+
+.header {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+
+.logoimg {
+  width: 140px;
+  height: 100px;
+  overflow: hidden;
+  
+}
+
+#main-page{
+  width: 200px;
+  height: 170px;
+}
+
+
+
+
+
+/* Add a black background color to the top navigation */
+.topnav-pc {
+
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav-pc a {
+  float: left;
+  color: #ccc;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+/* Change the color of links on hover */
+.topnav-pc a:hover {
+  border-bottom: var(--c1) solid 7px;
+  color: white;
+  opacity: 1;
+}
+
+/* Add a color to the active/current link */
+.topnav-pc a.active {
+ border-bottom: var(--c1) solid 7px;
+  color: white;
+}
+
+
+
+
+
+
+/* Add a black background color to the top navigation */
+.topnav-mobile {
+  opacity: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav-mobile a {
+  float: left;
+  color: #ccc;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+/* Change the color of links on hover */
+.topnav-mobile a:hover {
+  border-bottom: var(--c1) solid 7px;
+  color: white;
+  opacity: 1;
+}
+
+/* Add a color to the active/current link */
+.topnav-mobile a.active {
+ border-bottom: var(--c1) solid 7px;
+  color: white;
+}
+
+
+
+
+
+.btn-grad{
+  background-color: var(--c1);
+  margin: 10px;
+  padding: 15px 1.87rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 1s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 10px #eee;
+  border-radius: 30px;
+  display: block;
+  font-weight: bold;
+}
+
+@keyframes slideOutRight {
+  0% {
+      transform: translateZ(0)
+  }
+
+  to {
+      transform: translate3d(100%, 0, 0);
+      visibility: hidden
+  }
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   */
+
+.main {
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  height: 70%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* in mobile make width 95% */
+.main-box {
+  margin-bottom: 50px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+
+
+
+
+/* in mobile make font size smaller  */
+.box-text {
+  width: 65%;
+  color: black;
+  font-size: 60px;
+  font-weight: 750;
+  box-shadow: 15px rgba(0, 0, 0, 3.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-bottom: 20px;
+
+}
+
+.starting{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* in mobile make padding 0  */
+.wel-text {
+  color: white;
+  animation: animate 4s linear ;
+
+}
+
+@keyframes animate{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+
+
+
+.starting span {
+  font-weight: bold;
+  position: relative;
+  font-size: 55px;
+  margin-left: 40px;
+  color: transparent;
+  text-transform: uppercase;
+}
+
+.starting span::before{
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  border-right: 5px solid white;
+  overflow: hidden;
+  animation: animation 2s linear infinite;
+  color: white;
+  padding: 0 5px;
+}
+
+@keyframes animation{
+  0%,100%,10%{
+    width: 0%;
+  }
+
+  30%,90%{
+    width: 100%;
+  }
+
+  100%{
+    border-right: 0px;
+  }
+}
+
+
+
+
+
+
+.start-btn {
+  background-color: white;
+  padding: 15px 120px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+
+/* Dropdown Button */
+.dropbtns {
+  background-color: var(--c1);
+  color: white;
+  padding: 18px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  border: 2px solid transparent;
+  
+
+}
+
+.dropbtns span{
+  color: white;
+  font-size: 50px;
+
+}
+
+
+
+/* Dropdown button on hover & focus */
+.dropbtns:hover,
+.dropbtns:focus {
+  color: var(--c1);
+background-color: transparent;
+  border: 2px solid var(--c1);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdowns {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-contents {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 205px;
+  width: fit-content;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-contents a {
+  color: var(--c1);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  height: fit-content;
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-contents a:hover {
+  background-color: #ddd
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+
+
+
+
+
+
+/*   */
+
+
+
+.charts {
+  width: 100%;
+  height: 390px;
+  background-color: #F0F0F0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.charts-up h1 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+/* in mobile make flex direction column */
+.charts-down {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+/* in mobile make font size smaller  */
+.chart-box {
+  background-color: white;
+  width: 270px;
+  height: fit-content;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px;
+  flex-direction: column;
+  font-size: 25px;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+
+.chart-box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.chart-box-text span {
+  color: var(--c1);
+  font-size: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   */
+
+.opinion {
+  background-color: white;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.opinion-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 35px;
+  padding: 20px 0;
+  height: fit-content;
+}
+
+
+/*  in mobile make flex direction column */
+.opinion-boxs {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.opinion-box {
+  background-color: white;
+  width: 450px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 20PX;
+  overflow: hidden;
+  box-shadow: 2px 1px 5px 2px black;
+}
+
+
+.opinion-box-img {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.opinion-box-img img {
+  width: 100%;
+
+}
+
+.opinion-box-name {
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 10px;
+
+}
+
+.opinion-box-age {
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+.opinion-box-text {
+  padding: 30px;
+}
+
+
+
+/*   */
+/* in mobile make font size smaller  */
+
+.call-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 60%;
+  height: 300px;
+  border: 0px black solid;
+  overflow: hidden;
+
+}
+
+.call-left {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+
+}
+
+.call-right {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+
+
+/*   */
+
+.contact {
+  background-color: #F0F0F0;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 0;
+  align-items: center;
+}
+
+.call-left-text,
+.call-right-text {
+  font-size: 25px;
+}
+
+.call-left span,
+.call-right span {
+  font-size: 100px;
+  color: var(--c1);
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: var(--c1);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: var(--c2);
+}
+
+
+
+/* in mobile make width 90%  */
+/* Add a background color and some padding around the form */
+.container {
+  margin-top: 50px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  height: 670px;
+  width: 70%;
+}
+
+.container label {
+  font-size: 25px;
+  color: var(--c1);
+}
+
+
+
+
+/*    */
+/* subjects */
+
+
+.subjects {
+  background-color: white;
+  width: 100%;
+  height: 1500px;
+}
+
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+.subjects {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: var(--c1);
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 20px;
+  width: 14.28571428571429%;
+}
+
+.tablink1 {
+  background-color: black;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 20px;
+  width: 33%;
+}
+
+.tablink:hover {
+  background-color: var(--c2);
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+#Arabic {
+  background-color: white;
+}
+
+#English {
+  background-color: white;
+}
+
+#Math {
+  background-color: white;
+}
+
+#Physics {
+  background-color: white;
+}
+
+#Chemistry {
+  background-color: white;
+}
+
+#Biology {
+  background-color: white;
+}
+
+#Other {
+  background-color: white;
+}
+
+
+/* in mobile make flex direction column   */
+
+.teachers {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.teacher {
+  display: flex;
+  flex-direction: column;
+  width: 340PX;
+  background-color: black;
+  height: 400px;
+  align-items: center;
+  transition: 1s;
+  margin: 10px;
+}
+
+.teacher-other {
+  display: flex;
+  flex-direction: column;
+  width: 340PX;
+  background-color: black;
+  height: 470px;
+  align-items: center;
+  transition: 1s;
+  margin: 10px;
+}
+
+.subject p{
+  color: var(--c1);
+  padding-top: 20px;
+  font-size: 25px;
+}
+
+.teacher-img {
+  height: 70%;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.teacher-img img {
+  width: 100%;
+  border-radius: 130px;
+}
+
+
+
+.teacher-name {
+  height: 30%;
+  margin-top: 40px;
+  background-color: var(--c1);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  overflow: hidden;
+}
+
+.teacher-name a {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  overflow: hidden;
+}
+
+.teacher:hover {
+  transform: scale(1.1);
+  background-color: #444;
+}
+
+
+
+
+
+
+
+
+.teacher-img2 {
+  height: 65%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.teacher-img2 img {
+  width: 100%;
+  border-radius: 130px;
+}
+
+
+
+.teacher-name2 {
+  height: 25%;
+  margin-top: 15px;
+  background-color: var(--c1);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  overflow: hidden;
+
+}
+
+.teacher-name2 a {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  overflow: hidden;
+}
+
+.sub {
+
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub span {
+  color: var(--c1);
+  font-size: 40px;
+}
+
+/*  */
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  overflow: hidden;
+}
+
+.upper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.footer-img {
+
+  width: 150px;
+}
+
+.footer-img img {
+  width: 100%;
+}
+
+
+/* in mobile make font size smaller */
+
+.footer-text {
+  padding: 0 150px;
+  font-size: 16PX;
+}
+
+.shortcuts {
+  display: flex;
+
+}
+
+.shortcuts span {
+  padding: 0 10px;
+
+}
+
+.right {
+
+  padding: 100px 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50PX;
+}
+
+.right a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  transition: 0.2s;
+  margin-bottom: 15PX;
+
+
+
+}
+
+.right a:hover {
+  text-decoration: underline;
+  color: var(--c1);
+
+}
+
+
+.down {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+.videos{
+  background-color: #F0F0F0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  overflow-y: scroll;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 550px;
+}
+
+.video{
+  margin: 20px;
+  width: 45%;
+  height: 315px;
+
+}
+
+
+
+
+
+
+@media screen and (min-width:0px) and (max-width:860px){
+  .topnav-pc{
+    display: none;
+  }
+
+
+  .topnav-mobile{
+    opacity: 1;
+  }
+}
+@media screen and (min-width:281px) and (max-width:450px){
+  .topnav-mobile a{
+    font-size: 16px;
+    padding: 10px 10px;
+
+  }
+}
+
+@media screen and (min-width:0px) and (max-width:280px){
+  .topnav-mobile a{
+    font-size: 12px;
+    padding: 10px 10px;
+
+  }
+}
+
+@media screen and (min-width:1000px) and (max-width:1305px){
+  .box-text{
+    font-size: 60px;
+    width: 100%;
+  }
+}
+
+
+
+
+@media screen and (min-width:0px) and (max-width:480px) {
+
+  .navbar {
+    height: 70px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+
+  }
+
+
+  .btn-grad {
+    font-size: 10px;
+    padding: 12px 15px;
+  }
+
+  .header {
+    height: fit-content;
+  }
+
+  #main-page{
+    width: 140;
+    height: 100px;
+  }
+
+  .logoimg {
+    width: 120px;
+  }
+
+  #main-page{
+    width: 160px;
+    height: 130px;
+  }
+
+
+
+  .box-text {
+    width: 90%;
+
+
+    font-size: 37px;
+  }
+
+
+
+
+
+  .start-btn {
+    padding: 15px 0;
+  }
+
+  .starting span {
+    font-weight: bold;
+    font-size: 37px;
+    margin-left: 20px;
+
+  }
+  
+  .dropbtns {
+    padding: 8px;
+    font-size: 21px;
+  }
+
+
+
+  .chart-box {
+    width: 150px;
+    padding: 20px;
+    font-size: 20px;
+    margin: 0 10px;
+
+  }
+
+  .chart-box-text span {
+    font-size: 34px;
+  }
+
+  .opinion-header {
+    font-size: 30px;
+    padding: 20px 20px;
+  }
+
+  .opinion-boxs {
+    padding: 0 20px;
+    flex-direction: column;
+  }
+
+  .opinion-box {
+    margin-bottom: 20px;
+    width: 90%;
+  }
+
+  .call-box {
+    width: 90%;
+    height: 250PX;
+  }
+
+  .call-left span,
+  .call-right span {
+    font-size: 60px;
+  }
+
+  .call-left-text,
+  .call-right-text {
+    font-size: 13px;
+  }
+
+  .footer-text {
+    padding: 0PX 40PX;
+    font-size: 13PX;
+  }
+
+  .right a {
+    font-size: 15px;
+    margin-bottom: 15PX;
+  }
+
+  .right-left {
+    margin-right: 30PX;
+  }
+
+  .right a SPAN {
+    font-size: 12px;
+  }
+
+  .tablink {
+    font-size: 15px;
+    overflow: hidden;
+  }
+
+  .teachers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teacher {
+    width: 305px;
+  }
+
+  .teacher-other {
+    width: 305px;
+  }
+
+  .videos{
+    padding: 2px;
+
+
+  }
+
+  .video{
+    width: 100%;
+    margin: 10px;
+    height: 250px;
+
+  }
+}
+
+
+@media screen and (min-width:481px) and (max-width:768px) {
+
+  .navbar {
+    height: 70px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+    padding-top: 22px;
+  }
+
+  .btn-grad {
+    font-size: 13px;
+  }
+
+  .header {
+    height: fit-content;
+  }
+
+  .logoimg {
+    width: 130px;
+  }
+
+
+  .box-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    font-size: 40px;
+  }
+
+
+
+  .start-btn {
+    padding: 15px 0;
+  }
+
+  .starting span {
+    font-size: 40px;
+    margin-left: 45px;
+  }
+
+  .dropbtns {
+    padding: 11px;
+    font-size: 23px;
+  }
+
+
+
+  .chart-box {
+    width: 170px;
+    padding: 20px;
+    font-size: 22px;
+    margin: 0 10px;
+
+  }
+
+  .chart-box-text span {
+    font-size: 37px;
+  }
+
+  .opinion-header {
+    font-size: 30px;
+    padding: 20px 20px;
+  }
+
+  .opinion-boxs {
+    padding: 0 20px;
+    flex-direction: column;
+  }
+
+  .opinion-box {
+    margin-bottom: 20px;
+    width: 90%;
+  }
+
+  .call-box {
+    width: 90%;
+    height: 250PX;
+  }
+
+  .call-left span,
+  .call-right span {
+    font-size: 70px;
+  }
+
+  .call-left-text,
+  .call-right-text {
+    font-size: 15px;
+  }
+
+  .footer-text {
+    padding: 0PX 40PX;
+    font-size: 14PX;
+  }
+
+  .right a {
+    font-size: 15px;
+    margin-bottom: 15PX;
+
+  }
+
+  .right a SPAN {
+    font-size: 15px;
+  }
+
+  .tablink {
+    font-size: 15px;
+    overflow: hidden;
+  }
+
+  .teachers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .videos{
+    padding: 3px;
+
+
+  }
+
+  .video{
+    width: 100%;
+    margin: 12px;
+    height: 250px;
+
+  }
+
+
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+  .videos{
+    padding: 5px;
+
+
+  }
+
+  .video{
+    width: 100%;
+    margin: 14px;
+
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:1024px){
+  .video{
+    height: 400px;
+  }
+  
+
+}
+
+
+
+
+
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+  .navbar {
+    height: 70px;
+  }
+
+  .navbar a {
+    font-size: 20px;
+    padding-top: 22px;
+  }
+
+  .btn {
+    font-size: 17px;
+  }
+
+  .header-grad {
+    height: 130px;
+  }
+
+  .logoimg {
+    width: 140px;
+  }
+
+
+
+  .box-text {
+    padding-left: 15px;
+   width: 100%;
+    font-size: 47px;
+  }
+
+
+
+
+
+
+
+
+
+  .starting span {
+    font-size: 50px;
+    margin-left: 55px;
+  }
+
+
+
+
+
+  .dropbtns {
+    padding: 11px;
+    font-size: 35px;
+  }
+
+
+
+  .chart-box {
+    width: 250px;
+
+    margin: 0 10px;
+
+  }
+
+  .chart-box-text span {
+    font-size: 37px;
+  }
+
+  .opinion-header {
+    font-size: 30px;
+    padding: 20px 20px;
+  }
+
+  .opinion-boxs {
+    padding: 0 20px;
+    flex-direction: column;
+  }
+
+  .opinion-box {
+    margin-bottom: 20px;
+    width: 80%;
+  }
+
+  .opinion-box-name {
+    font-size: 25px;
+  }
+
+  .opinion-box-age {
+    font-size: 22px;
+  }
+
+  .opinion-box-text {
+    font-size: 20px;
+  }
+
+  .call-box {
+    width: 90%;
+    height: 200PX;
+  }
+
+  .call-left span,
+  .call-right span {
+    font-size: 90px;
+  }
+
+  .call-left-text,
+  .call-right-text {
+    font-size: 23px;
+  }
+
+  .footer-text {
+    padding: 0PX 40PX;
+    font-size: 17PX;
+  }
+
+  .right a {
+    font-size: 19px;
+    margin-bottom: 17PX;
+
+  }
+
+  .right a SPAN {
+    font-size: 15px;
+  }
+
+  .tablink {
+    font-size: 15px;
+    overflow: hidden;
+  }
+
+  .teachers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teacher {
+    width: 500px;
+  }
+  .teacher-other {
+    width: 500px;
+  }
+
+  .teacher-img {
+    width: 50%;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .container label {
+    font-size: 27px;
+
+  }
+
+  .teacher-img2 {
+    height: 60%;
+    width: 45%;
+    padding-top: 20px;
+  }
+
+  .teacher-img2 IMG {
+    width: 100%;
+  }
+
+  .sub {
+    height: 15%;
+  }
+}
+
